@@ -35,7 +35,7 @@ class BookSpider(CrawlSpider):
         # self.log(message="I am fetching wiki page...")
 
         # text = "\n".join(response.xpath('//p//text()|''//h2//text()').extract())
-        text = '\n'.join(response.xpath('//p//text()|''//h2//text()|''//h3//text()|''//h3/following-sibling::dl//text()|''//p/following-sibling::ul//text()').extract())
+        text = '\n'.join(response.xpath('//p//text()|''//h2/text()|''//h3/text()|''//h3/following-sibling::dl//text()|''//p/following-sibling::ul//text()').extract())
         table_text = "\n".join(response.xpath('//table//text()').extract())
         url = response.url
 
