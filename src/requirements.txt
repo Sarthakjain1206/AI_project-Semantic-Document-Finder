@@ -57,7 +57,7 @@ SpeechRecognition==3.8.1
 textract==1.6.3
 tk-html-widgets==0.4.0
 tzlocal==1.5.1
-urllib3==1.25.8
+urllib3==1.26.5
 WebOb==1.8.6
 Werkzeug==1.0.0
 whichcraft==0.6.1
